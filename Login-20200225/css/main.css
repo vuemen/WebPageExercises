@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background: url('../images/timg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+#login-box {
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 13%;
+    padding: 20px 50px;
+    text-align: center;
+    background: #00000070;
+    color: #fff;
+}
+#login-box button {
+    margin-top: 15px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #db3125 0%, #578bc3 100%);
+    border: 0;
+    border-radius: 15px;
+}
+#login-box .form .item {
+    margin-top: 15px;
+}
+#login-box .form .item input {
+    border: 0;
+    width: 240px;
+    border-bottom: 2px solid #fff;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 900;
+    background: #ffffff00;
+    color: #ffffff;
+}
