@@ -9,13 +9,13 @@ body {
     height: auto;
     margin: 0 auto;
     margin-top: 13%;
-    padding: 20px 50px;
+    padding: 20px 50px 50px 50px;
     text-align: center;
     background: #00000070;
     color: #fff;
 }
 #login-box button {
-    margin-top: 15px;
+    margin-top: 20px;
     width: 200px;
     height: 30px;
     line-height: 30px;
