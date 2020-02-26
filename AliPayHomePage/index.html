@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>支付宝 知托付！</title>
+</head>
+<body>
+    <div id="top-box">
+        <img id="logo" src="images/logo.png" style="margin-left: 140px;" />
+        <img id="IPV6" src="images/IPV6.png" style="margin-left: 20px;" />
+        <div id="tips">
+            <span>我已有支付宝账户&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://auth.alipay.com/login/index.htm?goto=https%3A%2F%2Fwww.alipay.com%2F">快速登录</a></span>
+        </div>
+    </div>
+    <div id="center-box">   
+        <img src="images/youAreCenter.png" />
+        <div id="items">
+            <button>我是合作伙伴</button>
+            <button>我是商家用户</button>
+            <button>我是个人用户</button>
+        </div>
+    </div>
+    <div id="bottom-box">
+        <p>
+            蚂蚁金服集团 | 支付宝 | 余额宝 | 蚂蚁商家中心 | 芝麻信用 | 蚂蚁微贷 | 网商银行 | 开放平台 | 诚征英才 | 联系我们 | International Business 
+        </p>
+        <p> 经营许可证编号：合字B2-20190046网站备案：沪ICP备15027489号 </p>
+    </div>
+    <script type="text/javascript">
+        window.onload = function() {
+            //（设定想要显示的图片）
+            var imgs =["images/main1.jpg", "images/main2.jpg", "images/main3.jpg"];    
+            var i = 0;
+            //获取DIV对象
+            var centerBox = document.getElementById("center-box");
+            //设置图片的初始图片为该路径的图片
+            centerBox.style.background = "url('images/main1.jpg')"; 
+            centerBox.style['background-repeat'] = 'no-repeat';
+            centerBox.style['background-size'] = '100% 560px';
+            function time() {
+                i++;   
+                i = i % 3;         // 超过2则取余数，保证循环在0、1、2之间
+                centerBox.style.background = "url('" + imgs[i] + "')";   
+                centerBox.style['background-repeat'] = 'no-repeat';
+                centerBox.style['background-size'] = '100% 560px';
+            }
+            setInterval(time, 3000);//循环调用time1()函数，时间间隔为2000ms
+            //setInterval()函数，按照指定的周期（按毫秒计）来调用函数或表达式
+        }
+    </script>
+</body>
+</html>
