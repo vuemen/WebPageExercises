@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多媒体标签之视频标签</title>
+    <style>
+        video {
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 谷歌等一些浏览器会禁用自动播放功能 -->
+    <video src="media/game.mp4" controls="controls" poster="media/timg.jpg"></video>
+    
+    <!-- 不同浏览器支持的格式不同 采取的解决方案 -->
+    <video autoplay="autoplay" loop="loop" muted="muted">
+        <source src="media/game.mp4" type="video/mp4">
+        <source src="media/game.Ogg" type="video/Ogg">
+        不支持的视频播放
+    </video>
+    
+</body>
+</html>

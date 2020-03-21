@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多媒体标签之音频标签</title>
+</head>
+<body>
+    
+    <!-- 谷歌等一些浏览器会禁用自动播放功能 -->
+    <audio src="media/birth.mp3" autoplay="autoplay" loop="loop" controls="controls"></audio>
+
+    <!-- 不同浏览器支持的格式不同 采取的解决方案 -->
+    <audio controls="controls">
+        <source src="media/birth.mp3" type="audio/mpeg">
+        <source src="media/birth.ogg" type="audio/ogg">
+        不支持音频播放
+    </audio>
+
+</body>
+</html>

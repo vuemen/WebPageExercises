@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D转换之旋转rotate</title>
+    <style>
+        img {
+            width: 200px;
+            border-radius: 50%;
+            border: 1px solid pink;
+            transition: all 0.5s;
+        }
+        img:hover {
+            transform: rotate(360deg);
+        }
+        div:first-of-type {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 0 auto;
+            transform-origin: left bottom;
+            transition: all 1s;
+        }
+        div:first-of-type:hover {
+            transform: rotate(360deg);
+        }
+        div:last-of-type {
+            width: 200px;
+            height: 200px;
+            background-color: saddlebrown;
+            margin: 0 auto;
+            transform-origin: 50px 50px;
+            transition: all 1s;
+        }
+        div:last-of-type:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="media/timg.jpg" alt="">
+
+    <div></div>
+    <div></div>
+</body>
+</html>

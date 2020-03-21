@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3属性选择器</title>
+    <style>
+        button {
+            /* 鼠标悬浮变成小手的效果 */
+            cursor: pointer;
+        }
+        /* 选择的是具有 disabled 属性的 button */
+        button[disabled] {
+            cursor: default;
+        }
+        /* 选择的是 type 属性等于 text 的 input */
+        input[type="text"] {
+            color: red;
+        }
+        /* 选择的是 class 属性以 div 开头的 div */
+        div[class^="div"] {
+            color: pink;
+        }
+        /* 选择的是 class 属性以 div 结尾的 div */
+        div[class$="div"] {
+            color: red;
+        }
+        /* 选择的是 class 属性含有 test 的 div */
+        div[class*="test"] {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <button>按钮1</button>
+    <button disabled="disabled">按钮2</button>
+
+    <input type="text" name="" id="" value="文本框" />
+    <input type="search" name="" id="" value="搜索框" />
+
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+
+    <div class="adiv">adid</div>
+    <div class="bdiv">bdiv</div>
+
+    <div class="test">bdiv</div>
+    <div class="atestb">bdiv</div>
+</body>
+</html>

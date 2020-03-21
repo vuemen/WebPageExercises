@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D转换之移动translate</title>
+    <style>
+        div:first-child {
+            width: 200px;
+            height: 200px;
+            transform: translate(100px, 100px);
+            transform: translateX();
+            background-color: red;
+        }
+        div:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        div:last-child {
+            width: 200px;
+            height: 200px;
+            background-color: indianred;
+        }
+        div p {
+            width: 100px;
+            height: 100px;
+            background-color: lavenderblush;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+
+    <div>
+        <p></p>
+    </div>
+</body>
+</html>

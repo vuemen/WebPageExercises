@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例之图片缩放</title>
+    <style>
+        div {
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 50px;
+            border: 1px solid black;
+        }
+        div img {
+            width: 100px;
+            transition: all 0.5s;
+        }
+        div:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div><img src="media/timg.jpg" alt=""></div>
+    <div><img src="media/timg.jpg" alt=""></div>
+    <div><img src="media/timg.jpg" alt=""></div>
+</body>
+</html>

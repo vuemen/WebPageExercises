@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3结构伪类选择器</title>
+    <style>
+        /* ul下面第一个标签，是li的话，就有效果 */
+        ul li:first-child {
+            background-color: red;
+        }
+        /* ul下面最后一个标签，是li的话，就有效果 */
+        ul li:last-child {
+            background-color: green;
+        }
+        /* ul下面第5个标签，是li的话，就有效果 */
+        ul li:nth-child(5) {
+            background-color: yellow;
+        }
+        /* ul下面第3的倍数个标签，是li的话，就有效果 */
+        ul li:nth-child(3n) {
+            background-color: purple;
+        }
+        /* div下面第一个span标签 */
+        div span:first-of-type {
+            background-color: red;
+        }
+        /* div下面最后一个span标签 */
+        div span:last-of-type {
+            background-color: sandybrown;
+        }
+        /* div下面第5个span标签 */
+        div span:nth-of-type(5) {
+            background-color: sienna;
+        }
+        /* div下面第3的倍数个span标签 */
+        div span:nth-of-type(3n) {
+            background-color: springgreen;
+        }
+        /* div下面第一个标签，是span的话，就有效果 */
+        div span:first-child {
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <div>
+        <p>pppppppp</p>
+        <span>span1</span>
+        <span>span2</span>
+        <span>span3</span>
+        <span>span4</span>
+        <span>span5</span>
+        <span>span6</span>
+        <span>span7</span>
+        <span>span8</span>
+        <span>span9</span>
+        <span>span10</span>
+    </div>
+</body>
+</html>

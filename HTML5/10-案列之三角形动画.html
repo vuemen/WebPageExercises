@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例之三角形动画</title>
+    <style>
+        div {
+            width: 300px;
+            height: 35px;
+            position: relative;
+            border: 1px solid black;
+        }
+        div::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transform: rotate(45deg);
+            transition: all 0.5s;
+        }
+        div:hover::after {
+            transform: rotate(225deg);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
