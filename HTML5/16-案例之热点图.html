@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例之热点图</title>
+    <style>
+        body {
+            background-color: #93B0DF;
+        }
+        .map {
+            width: 684px;
+            height: 711px;
+            position: relative;
+            background: url("media/map.png") no-repeat;
+            margin: 0 auto;
+        }
+        .map .city {
+            position: absolute;
+            top: 215px;
+            right: 183px;
+        }
+        .map .tb {
+            top: 448px;
+            right: 92px;
+        }
+        .map .jx {
+            top: 391px;
+            right: 170px;
+        }
+        .map .city .dotted {
+            width: 8px;
+            height: 8px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .map .city div[class^="pulse"] {
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 12px red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            animation-name: pulse;
+            animation-duration: 1.2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .map .city .pulse2 {
+            animation-delay: .4s;
+        }
+        .map .city .pulse3 {
+            animation-delay: .8s;
+        }
+        @keyframes pulse {
+            0% {
+
+            }
+            70% {
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+            }
+            100% {
+                width: 70px;
+                height: 70px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="map">
+        <div class="city">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <div class="city tb">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <div class="city jx">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3动画的基本使用</title>
+    <style>
+        /* 定义动画 */
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(1000px, 0);
+            }
+            50% {
+                transform: translate(1000px, 500px);
+            }
+            75% {
+                transform: translate(0, 500px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            background-color: pink;
+            /* 动画名称 */
+            animation-name: move;
+            /* 动画的持续时长 */
+            animation-duration: 3s;
+            /* 速度曲线 */
+            animation-timing-function: ease-in;
+            /* 动画在页面加载后延迟多少秒执行，默认是0 */
+            animation-delay: 1s;
+            /* 动画执行的次数，可填数字或infinite，代表无限次 */
+            animation-iteration-count: infinite;
+            /* 在下一周期是否逆向播放,播放次数需大于1才有效 */
+            animation-direction: alternate;
+            /* 动画结束后的状态，起始位置还是结束位置 */
+            animation-fill-mode: backwards;
+        }
+        div:hover {
+            /* 改变动画运行状态，暂停还是运行 */
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
