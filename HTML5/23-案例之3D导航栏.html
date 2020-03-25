@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例之3D导航栏</title>
+    <style>
+        body {
+           
+        }
+        ul li {
+            list-style: none;
+            width: 100px;
+            height: 40px;
+            float: left;
+            margin-right: 10px;
+        }
+        ul li .box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all .5s;
+        }
+        ul li .box .front, .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color: pink;
+            text-align: center;
+            line-height: 40px;
+            font-size: 24px;
+        }
+        ul li .box .back {
+            background-color: purple;
+            transform: translateY(50%) rotateX(-90deg);
+        }
+        ul li .box .front {
+            transform: translateZ(20px);
+        }
+        ul li .box:hover {
+            transform: rotateX(90deg);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="front">rrl</div>
+                <div class="back">zss</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">rrl</div>
+                <div class="back">zss</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">rrl</div>
+                <div class="back">zss</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">rrl</div>
+                <div class="back">zss</div>
+            </div class="box">
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">rrl</div>
+                <div class="back">zss</div>
+            </div class="box">
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">rrl</div>
+                <div class="back">zss</div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

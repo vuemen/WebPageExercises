@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D转换之旋转</title>
+    <style>
+        body {
+            perspective: 500px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            float: left;
+            margin-top: 100px;
+            margin-left: 300px;
+            transition: all 1s;
+        }
+        .box img {
+            width: 100px;
+        }
+        .box:first-child:hover {
+            transform: rotateX(45deg);
+        }
+        .box:nth-child(2):hover {
+            transform: rotateY(45deg);
+        }
+        .box:last-child:hover {
+            transform: rotateZ(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><img src="media/timg.jpg" alt=""></div>
+    <div class="box"><img src="media/timg.jpg" alt=""></div>
+    <div class="box"><img src="media/timg.jpg" alt=""></div>
+</body>
+</html>
