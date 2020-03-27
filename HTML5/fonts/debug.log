@@ -1,0 +1,3 @@
+[0327/104458.569:ERROR:crashpad.cc(145)] Failed to get activation factory for IPlatformDiagnosticsAndUsageDataSettingsStatics
+[0327/105737.579:ERROR:crashpad.cc(145)] Failed to get activation factory for IPlatformDiagnosticsAndUsageDataSettingsStatics
+[0327/105908.509:ERROR:crashpad.cc(145)] Failed to get activation factory for IPlatformDiagnosticsAndUsageDataSettingsStatics
