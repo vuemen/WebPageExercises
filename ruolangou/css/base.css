@@ -1,8 +1,16 @@
-/* 基础的样式表 */
+/* 基础(初始化)的样式 */
 * {
     margin: 0;
     padding: 0;
 }
 li {
     list-style: none;
+}
+input {
+    outline: none;
+    border-radius: 0;
+}
+button {
+    outline: none;
+    border-radius: 0;
 }

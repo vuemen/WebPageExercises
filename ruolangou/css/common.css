@@ -7,3 +7,152 @@
 .fr {
     float: right;
 }
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+body {
+    background-color: #F4F4F4;
+}
+.show_red {
+    color: #FF0000;
+}
+a {
+    text-decoration: none;
+    color: #999;
+    font-size: 12px;
+}
+a:hover {
+    color: #FF0000;
+}
+/* 声明字体 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/iconfont.woff2') format('woff2'),
+        url('../fonts/iconfont.woff') format('woff'),
+        url('../fonts/iconfont.ttf') format('truetype'),
+        url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+/* 顶部快捷导航 */
+.shortcut {
+    height: 31px;
+    background-color: #E3E4E5;
+    line-height: 31px;
+    font-size: 12px;
+}
+.shortcut ul li {
+    float: left;
+}
+.shortcut .spacer {
+    width: 1px;
+    height: 10px;
+    margin: 11px 20px 0;
+    background-color: #ccc;
+}
+.shortcut .fr ul li {
+    position: relative;
+}
+.shortcut .fl .iconfont {
+    font-family: 'iconfont';
+    font-size: 15px;
+    font-style: normal;
+    color: #F10215;
+    line-height: 12px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.shortcut .fr .iconfont {
+    font-family: 'iconfont';
+    font-size: 12px;
+    font-style: normal;
+    color: #9B9B9B;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 12px;
+    right: -13px;
+    line-height: 12px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* -header区域 */
+._header {
+    height: 140px;
+    background-color: white;
+}
+._header .w {
+    position: relative;
+}
+._header .logo {
+    width: 165px;
+    height: 53px;
+    position: absolute;
+    top: 43px;
+    left: 0;
+}
+._header .logo a {
+    display: block;
+    width: 165px;
+    height: 53px;
+    background: url('../img/logo.png') no-repeat;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+._header .search {
+    /* 490 36 outline */
+    position: absolute;
+    top: 25px;
+    left: 260px;
+}
+._header .search input {
+    width: 580px;
+    height: 36px;
+    border: 2px solid #E1251B;
+    padding-left: 10px;
+    float: left;
+}
+._header .search button {
+    width: 60px;
+    height: 40px;
+    background-color: #E1251B;
+    border: none;
+    float: left;
+}
+._header .search .iconfont {
+    font-family: 'iconfont';
+    font-size: 18px;
+    font-style: normal;
+    color: white;
+    line-height: 40px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+._header .hotwords {
+    position: absolute;
+    top: 65px;
+    left: 260px;
+}
+._header .hotwords a {
+    margin: 0 8px;
+}
+._header .shopcar {
+    width: 130px;
+    height: 36px;
+    position: absolute;
+    top: 26px;
+    right: 64px;
+    border: 1px solid #EEE;
+    text-align: center;
+    line-height: 36px;
+}
+._header .shopcar .iconfont {
+    font-family: 'iconfont';
+    font-size: 18px;
+    font-style: normal;
+    color: #E1251B;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
