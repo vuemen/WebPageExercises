@@ -12,11 +12,11 @@
     width: 1200px;
     margin: 0 auto;
 }
-body {
-    background-color: #F4F4F4;
-}
 .show_red {
     color: #FF0000;
+}
+body {
+    background-color: #F4F4F4;
 }
 a {
     text-decoration: none;
@@ -38,121 +38,338 @@ a:hover {
 }
 /* 顶部快捷导航 */
 .shortcut {
-    height: 31px;
     background-color: #E3E4E5;
-    line-height: 31px;
-    font-size: 12px;
+    border-bottom: 1px solid #DDD;
 }
-.shortcut ul li {
-    float: left;
-}
-.shortcut .spacer {
-    width: 1px;
-    height: 10px;
-    margin: 11px 20px 0;
-    background-color: #ccc;
-}
-.shortcut .fr ul li {
-    position: relative;
+.shortcut .w {
+    height: 31px;
+    line-height: 30px;
 }
 .shortcut .fl .iconfont {
     font-family: 'iconfont';
     font-size: 15px;
     font-style: normal;
     color: #F10215;
-    line-height: 12px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.shortcut .fr .shortcut_fr_items {
+    float: left;
+    height: 31px;
+    line-height: 30px;
+    padding-left: 13px;
+    padding-right: 13px;
 }
 .shortcut .fr .iconfont {
     font-family: 'iconfont';
-    font-size: 12px;
+    font-size: 15px;
     font-style: normal;
-    color: #9B9B9B;
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    top: 12px;
-    right: -13px;
-    line-height: 12px;
+    position: relative;
+    top: 2px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-/* -header区域 */
+.spacer {
+    position: relative; 
+    top: 12px;
+    width: 1px;
+    height: 10px;
+    float: left;
+    background-color: #CCC;
+    padding: 0;
+}
+/* 头部_header区域 */
 ._header {
-    height: 140px;
-    background-color: white;
+    background-color: #FFF;
 }
 ._header .w {
+    height: 105px;
     position: relative;
 }
-._header .logo {
-    width: 165px;
-    height: 53px;
+.logo a {
     position: absolute;
-    top: 43px;
-    left: 0;
-}
-._header .logo a {
+    top: 25px;
+    left: 50px;
     display: block;
     width: 165px;
     height: 53px;
-    background: url('../img/logo.png') no-repeat;
-    text-indent: -1000px;
-    overflow: hidden;
+    font-size: 0;
+    background: url("../img/logo.png") no-repeat;
 }
-._header .search {
-    /* 490 36 outline */
+.search {
     position: absolute;
     top: 25px;
-    left: 260px;
+    left: 350px;
 }
-._header .search input {
-    width: 580px;
-    height: 36px;
-    border: 2px solid #E1251B;
-    padding-left: 10px;
+.search input {
+    display: block;
+    width: 530px;
+    height: 33px;
     float: left;
+    border: 2px solid #E2231A;
+    padding-left: 20px;
+    font-size: 12px;
 }
-._header .search button {
+.search button {
+    display: block;
     width: 60px;
-    height: 40px;
-    background-color: #E1251B;
-    border: none;
+    height: 37px;
     float: left;
+    background-color: #E2231A;
+    border: none;
 }
-._header .search .iconfont {
+.search button .iconfont {
     font-family: 'iconfont';
     font-size: 18px;
     font-style: normal;
     color: white;
-    line-height: 40px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-._header .hotwords {
+.hotwords {
     position: absolute;
     top: 65px;
-    left: 260px;
+    left: 350px;
 }
-._header .hotwords a {
-    margin: 0 8px;
+.hotwords a {
+    padding-right: 10px;
 }
-._header .shopcar {
-    width: 130px;
-    height: 36px;
+.shopcar {
     position: absolute;
-    top: 26px;
-    right: 64px;
+    top: 25px;
+    right: 50px;
+    width: 130px;
+    height: 33px;
     border: 1px solid #EEE;
+    line-height: 33px;
     text-align: center;
-    line-height: 36px;
+    font-size: 14px;
 }
-._header .shopcar .iconfont {
+.shopcar .iconfont {
+    display: block;
+    position: relative;
+    top: 9px;
+    left: 23px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
     font-family: 'iconfont';
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     color: #E1251B;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.shopcar a {
+    display: block;
+    position: relative;
+    top: -16px;
+    right: -15px;
+}
+/* 导航栏区域 */
+.nav {
+    background-color: #FFF;
+    border-bottom: 1px solid #DDDDDD;
+}
+.nav .w {
+    height: 40px;
+    position: relative;
+}
+.all_class {
+    width: 250px;
+    height: 40px;
+}
+.all_class .dd {
+    height: 100%;
+    background-color: #E1251B;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.all_class .dt {
+    background-color: #C9322A;
+    color: white;
+    padding-left: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.all_class .dt li {
+    height: 27px;
+    line-height: 27px;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+.all_class .dt li:hover {
+    background-color: white;
+    color: #C9322A;
+}
+.all_class .dt li:hover a {
+    color: #C9322A;
+}
+.all_class .dt a {
+    color: white;
+    font-size: 12px;
+}
+.all_class .dt a:hover {
+    color: #C9322A;
+}
+.all_class .dt .iconfont {
+    font-family: 'iconfont';
+    font-size: 16px;
+    font-style: normal;
+    float: right;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.nav .nav_items {
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    margin-left: 20px;
+}
+.nav .nav_items li {
+    float: left;
+}
+.nav .nav_items a {
+    height: 40px;
+    display: block;
+    padding: 0 18px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #878787;     
+}
+.nav .nav_items a:hover {
+    color: #C9322A;
+}
+/* 底部区域 */
+._footer {
+    background-color: white;
+}
+._footer .w {
+    margin-top: 500px;
+    height: 536px;
+    padding-top: 30px;
+}
+.mod_service {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #DEDEDE;
+}
+.mod_service li {
+    float: left;
+    height: 100%;
+    width: 25%;
+}
+.mod_sercice_icon {
+    width: 36px;
+    height: 42px;
+    background-color: tomato;
+    float: left;
+    overflow: hidden;
+    background: url(../img/bgc.png) no-repeat;
+    margin-left: 44px;
+}
+.mod_service h3 {
+    padding: 7px 6px;
+    float: left;
+}
+.mod_sercice_icon_duo {
+    background-position: 0 -192px;
+}
+.mod_sercice_icon_kuai {
+    background-position: -41px -192px;
+}
+.mod_sercice_icon_hao {
+    background-position: -82px -192px;
+}
+.mod_sercice_icon_sheng {
+    background-position: -123px -192px;
+}
+.mod_help {
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid #DEDEDE;
+    padding-top: 22px;
+}
+.mod_help dl {
+    height: 100%;
+    width: 195px;
+    padding-left: 5px;
+    float: left;
+}
+.mod_help dl dd {
+    height: 24px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+.mod_help dt a {
+    color: #666;
+    font-size: 12px;
+}
+.mod_help dt a:hover {
+    color: #C9322A;
+}
+.mod_help_mast {
+    text-align: center;
+}
+.mod_help p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #666;
+}
+.mod_copyright {
+    text-align: center;
+    width: 100%;
+}
+.mod_copyright_links {
+    color: #999;
+    margin: 15px 0;
+}
+.mod_copyright_links a {
+    color: #666;
+}
+.mod_copyright_links a:hover {
+    color: #C9322A;
+}
+.mod_spacer {
+    font-size: 12px;
+    text-align: center;
+    margin: 0 10px;
+    color: #999;
+}
+.mod_copyright_gov {
+    color: #999;
+    font-size: 12px;
+    line-height: 24px;
+}
+.show_pic {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    overflow: hidden;
+    background-color:  pink;
+    margin-top: 25px;
+    background: url(../img/bgc.png) no-repeat;
+}
+.show_pic_1 {
+    background-position: -205px -111px;
+}
+.show_pic_2 {
+    background-position: -205px -74px;
+}
+.show_pic_3 {
+    background-position: -205px -37px;
+}
+.show_pic_4 {
+    background-position: -205px 0;
+}
+.show_pic_5 {
+        background-position: 0 -155px;
 }
