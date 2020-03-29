@@ -89,7 +89,7 @@ a:hover {
 .logo a {
     position: absolute;
     top: 25px;
-    left: 50px;
+    left: 17px;
     display: block;
     width: 165px;
     height: 53px;
@@ -99,7 +99,7 @@ a:hover {
 .search {
     position: absolute;
     top: 25px;
-    left: 350px;
+    left: 280px;
 }
 .search input {
     display: block;
@@ -129,7 +129,7 @@ a:hover {
 .hotwords {
     position: absolute;
     top: 65px;
-    left: 350px;
+    left: 280px;
 }
 .hotwords a {
     padding-right: 10px;
@@ -137,7 +137,7 @@ a:hover {
 .shopcar {
     position: absolute;
     top: 25px;
-    right: 50px;
+    right: 85px;
     width: 130px;
     height: 33px;
     border: 1px solid #EEE;
@@ -176,7 +176,7 @@ a:hover {
     position: relative;
 }
 .all_class {
-    width: 250px;
+    width: 190px;
     height: 40px;
 }
 .all_class .dd {
@@ -228,7 +228,7 @@ a:hover {
     height: 40px;
     position: absolute;
     top: 0;
-    left: 250px;
+    left: 185px;
     margin-left: 20px;
 }
 .nav .nav_items li {
@@ -249,9 +249,9 @@ a:hover {
 /* 底部区域 */
 ._footer {
     background-color: white;
+    margin-top: 10px;
 }
 ._footer .w {
-    margin-top: 500px;
     height: 536px;
     padding-top: 30px;
 }

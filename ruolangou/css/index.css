@@ -1,0 +1,131 @@
+.main {
+    position: relative;
+    width: 1000px;
+    height: 470px;
+    margin-left: 210px;
+    margin-top: 16px;
+}
+.foucus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 590px;
+}
+.foucus button {
+    border: none;
+    width: 24px;
+    height: 30px;
+    background: #ffffff50;
+}
+.foucus .iconfont {
+    font-family: 'iconfont';
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fbtnl {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.fbtnr {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.circle {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.circle .shixin {
+    background-color: #fff;
+}
+.circle li {
+    width: 8px;
+    height: 8px;
+    float: left;
+    margin: 0 5px;
+    border: 1px solid #ffffff50;
+    border-radius: 50%;
+}
+.showpic {
+    height: 100%;
+    width: 190px;
+    position: absolute;
+    top: 0;
+    left: 605px;
+}
+.showpic_pic {
+    display: block;
+    width: 190px;
+    height: 150px;
+    background-size: 190px 150px;
+}
+.showpic_pic_first {
+    background-image: url('../upload/showpic1.jpg');
+}
+.showpic_pic_mid {
+    margin: 10px 0;
+    background-image: url('../upload/showpic2.jpg');
+}
+.showpic_pic_last {
+    background-image: url('../upload/showpic3.jpg');
+}
+.newsflash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 190px;
+    background-color: #fff;
+}
+.news {
+    height: 229px;
+    border-bottom: 1px solid #EEE;
+}
+.newsicon {
+    height: 240px;
+}
+.news_title {
+    font-size: 14px;
+    padding: 5px 10px 0 10px;
+    color: #4C4C4C;
+}
+.news_title a {
+    float: right;
+}
+.news_content li {
+    height: 25px;
+    padding-left: 1px;
+}
+.newsicon li {
+    float: left;
+    width: 62px;
+    height: 60px;
+    font-size: 12px;
+    text-align: center;
+}
+.newsicon li:nth-child(3n-1) {
+    margin: 0 2px;
+}
+.iconnews {
+    width: 28px;
+    height: 28px;
+    margin:  5px 17px;
+}
+.iconnews img {
+    width: 28px;
+    height: 28px;
+}
