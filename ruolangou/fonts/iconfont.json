@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "13639800",
+      "name": "右边",
+      "font_class": "youbian",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "8288992",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e86a",
+      "unicode_decimal": 59498
+    },
+    {
       "icon_id": "705669",
       "name": "购物车",
       "font_class": "gouwuche",

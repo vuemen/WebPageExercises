@@ -1,8 +1,9 @@
+/* 主体区域 */
 .main {
     position: relative;
     width: 1000px;
     height: 470px;
-    margin-left: 210px;
+    margin-left: 200px;
     margin-top: 16px;
 }
 .foucus {
@@ -128,4 +129,289 @@
 .iconnews img {
     width: 28px;
     height: 28px;
+}
+/* 推荐区域 */
+.recommend {
+    height: 260px;
+    background-color: #fff;
+    margin-top: 16px;
+}
+.recommend_title {
+    width: 190px;
+    height: 100%;
+    background: url(../img/recommend_title_bg.png) no-repeat; 
+    color: #fff; 
+    text-align: center;
+}
+.recommend_title h2:first-child {
+    margin-top: 55px;
+}
+.recommend_title h2:last-child {
+    margin-top: 75px;
+}
+.recommend_content {
+    width: 1010px;
+    height: 100%;
+}
+.recommend_content li {
+    float: left;
+    width: 20%;
+    height: 235px;
+    margin-top: 35px;
+}
+.recommend_content_item {
+    width: 100%;
+    height: 140px;
+    border-right: 1px solid #F2F2F2;
+    text-align: center;
+    line-height: 14px;
+}
+.recommend_content_item_last {
+    border: none;
+}
+.recommend_content_pic {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+}
+.recommend_content_item a {
+    display: block;
+    margin: 10px 0;
+}
+.recommend_content_item span {
+    display: inline-block;
+    width: 92px;
+    height: 22px;
+    line-height: 22px;
+}
+.recommend_content_pic_red {
+    background-color: #E1251B;
+    color: #fff;
+    border: 1px solid #E1251B;
+}
+.recommend_content_item span:last-child {
+    background-color: #fff;
+    color: #999;
+    border: 1px solid #E1251B;
+    text-decoration: line-through;
+}
+/* 特价区域 */
+.special {
+    height: 340px;
+    margin-top: 16px;
+}
+.special_goods {
+    height: 100%;
+    width: 590px;
+    background-color: #fff;
+}
+.special_goods_title {
+    height: 60px;
+    width: 100%;
+}
+.special_goods_title_text {
+    height: 100%;
+    width: 200px;
+    line-height: 60px;
+    margin-left: 18px;
+    font-family: 'iconfont';
+}
+.special_goods_title_nav {
+    height: 100%;
+    width: 300px;
+    margin-right: 18px;
+}
+.special_goods_title_nav li {
+    float: left;
+    color: #999;
+    font-size: 16px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 0;
+}
+.special_goods_title_nav li:hover {
+    color: #E1251B;
+    border-bottom: 2px solid #E1251B;
+}
+.special_goods_title_nav ul .show_border_red {
+    color: #E1251B;
+    border-bottom: 2px solid #E1251B;
+}
+.special_goods_content {
+    width: 100%;
+    height: 280px;
+    margin-top: 0;
+}
+.special_goods_content_title {
+    width: 170px;
+    height: 244px;
+    background-color: #F8F8F9;
+    transform: translate(18px, 18px);
+    position: relative;
+}
+.special_goods_content_title img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+.special_goods_content_title_text {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.line-through-span {
+    text-decoration: line-through;
+}
+.special_goods_content_list {
+    height: 244px;
+    width: 340px;
+    margin-top: 18px;
+    margin-right: 18px;
+}
+.special_goods_content_items {
+    width: 170px;
+    height: 122px;
+    float: left;
+}
+.special_goods_content_items_pic {
+    width: 84px;
+    height: 84px;   
+    margin-top: 19px;
+}
+.special_goods_content_items_content {
+    width: 86px;
+    height: 107px;
+    font-size: 12px;
+    padding-top: 15px;
+} 
+.special_goods_content_items_content span {
+    color: #333333;
+}
+.special_goods_content_items_pic img {
+    width: 84px;
+    height: 84px; 
+}
+.flash_buy {
+    height: 100%;
+    width: 590px;
+    background-color: #fff;
+}
+.flash_buy_content {
+    width: 100%;
+    height: 280px;
+    margin-top: 0;
+    background-color: #E1251B;
+}
+.flash_buy_content_title {
+    width: 270px;
+    height: 265px;
+    transform: translate(18px, 5px);
+    position: relative;
+}
+.flash_buy_content_item_list {
+    width: 270px;
+    height: 270px;
+    margin-right: 18px;
+    margin-top: 0;
+}
+.flash_buy_content_item {
+    width: 135px;
+    height: 90px;
+    float: left;
+}
+.flash_buy_content_item_pic {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #858585;
+    line-height: 20px;
+    border-right: 1px solid #EFEFEF;
+}
+.flash_buy_content_item_list div:nth-child(2n) .flash_buy_content_item_pic {
+    border: none;
+}
+.flash_buy_content_item_pic img {
+    width: 100px;
+    height: 50px;
+}
+.flash_buy_content_item_pic span {
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+/* 发现好货区域 */
+.fond_goods {
+    height: 260px;
+    margin-top: 16px;
+}
+.find_goods_title {
+    position: relative;
+    height: 260px;
+    width: 190px;
+    background: url(../img//find_goods_bg.png) no-repeat;
+}
+.find_goods_title_text {
+    width: 160px;
+    height: 90px;
+    background: url(../img/find_goods_text_bg.png) no-repeat;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 127px;
+    font-family: 'iconfont';
+}
+.find_goods_content {
+    background-color: #fff;
+    width: 990px;
+    height: 260px;
+    overflow: hidden;
+}
+.find_goods_content:hover .find_goods_content_main {
+    animation-play-state: paused;
+}
+@keyframes find_goods_move {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-990px);
+    }
+}
+.find_goods_content_main {
+    width: 1980px;
+    height: 190px;
+    margin-top: 35px;
+    background-color: #fff;
+    animation: find_goods_move 15s linear infinite;
+}
+.find_goods_content_main li {
+    float: left;
+    position: relative;
+    height: 190px;
+    width: 198px;
+}
+.find_goods_content_main img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.find_goods_content_main a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.find_goods_content_main ul li .float_top {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
 }
