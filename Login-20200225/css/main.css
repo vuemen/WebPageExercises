@@ -1,40 +1,89 @@
-body {
+* {
+    padding: 0;
     margin: 0;
-    background: url('../images/timg.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
 }
-#login-box {
-    width: 25%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 13%;
-    padding: 20px 50px 50px 50px;
+
+body {
+    background: url(../images/timg.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 260px;
+    background-color: #00000060;
+    transform: translate(-50%, -50%);
     text-align: center;
-    background: #00000070;
+}
+
+h1 {
     color: #fff;
-}
-#login-box button {
-    margin-top: 20px;
-    width: 200px;
-    height: 30px;
-    line-height: 30px;
-    color: #ffffff;
-    font-size: 20px;
-    background-image: linear-gradient(to right, #db3125 0%, #578bc3 100%);
-    border: 0;
-    border-radius: 15px;
-}
-#login-box .form .item {
     margin-top: 15px;
 }
-#login-box .form .item input {
-    border: 0;
-    width: 240px;
-    border-bottom: 2px solid #fff;
-    padding: 5px 10px;
-    font-size: 16px;
+
+.form input {
+    outline: none;
+    border-radius: 0;
+    width: 280px;
+    height: 38px;
+    font-size: 18px;
+    padding-left: 30px;
+    background-color: #00000000;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
     font-weight: 900;
-    background: #ffffff00;
-    color: #ffffff;
+}
+
+.form input::-webkit-input-placeholder { 
+    color: #fff;    
+}
+
+.form input::-moz-placeholder {
+    color: #fff;
+}
+
+button {
+    outline: none;
+    width: 200px;
+    height: 38px;
+    font-size: 24px;
+    background-image: linear-gradient(to right, #db3125 0%, #578bc3 100%);
+    color: #fff;
+    border-radius: 15px;
+    margin-top: 30px;
+    border: none;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/iconfont.woff2') format('woff2'),
+        url('../font/iconfont.woff') format('woff'),
+        url('../font/iconfont.ttf') format('truetype'),
+        url('../font/iconfont.svg#../font/iconfont') format('svg');
+}
+
+.item {
+    position: relative;
+}
+
+.iconfont {
+    position: absolute;
+    top: 24px;
+    left: 70px;
+    font-family: "iconfont" !important;
+    font-size: 20px;
+    color: #fff;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
